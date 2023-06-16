@@ -1,78 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>NFT preview card component</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <article>
-        <div class="nft">
-          <div class="image-container">
-            <img
-              src="./images/image-equilibrium.jpg"
-              alt="Equilibrium"
-              class="nft__image"
-            />
-            <div class="overlay"></div>
-            <img src="./images/icon-view.svg" alt="view icon" class="view" />
-          </div>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-          <div class="nft__info">
-            <div class="nft__info__title">
-              <h2>Equilibrium #3429</h2>
+  <title>NFT preview card component</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="nft">
+      <div class="image-container">
+        <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="nft__image" />
+        <div class="overlay"></div>
+        <img src="./images/icon-view.svg" alt="view icon" class="view" />
+      </div>
+
+      <div class="nft__info">
+        <div class="nft__info__title">
+          <h2>Equilibrium #3429</h2>
+        </div>
+
+        <div class="nft__info__description">
+          <p>
+            Our Equilibrium collection promotes <br />
+            balance and calm.
+          </p>
+          <div class="nft__info__price__timeleft">
+            <div class="nft__info__price">
+              <img src="./images/icon-ethereum.svg" alt="eth-icon" class="icon" />
+              <span class="eth">0.041 ETH</span>
             </div>
 
-            <div class="nft__info__description">
-              <p>
-                Our Equilibrium collection promotes <br />
-                balance and calm.
-              </p>
-              <div class="nft__info__price__timeleft">
-                <div class="nft__info__price">
-                  <img
-                    src="./images/icon-ethereum.svg"
-                    alt="eth-icon"
-                    class="icon"
-                  />
-                  <span class="eth">0.041 ETH</span>
-                </div>
-
-                <div class="time__left">
-                  <img
-                    src="./images/icon-clock.svg"
-                    alt="clock"
-                    class="time__left__icon"
-                  /><span class="nft__info__timeleft">3 days left</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="nft__info__creator">
-              <img
-                src="./images/image-avatar.png"
-                alt="avatar"
-                class="nft__info__creator__avatar"
-              />
-              <p>
-                Creation of
-                <span class="nft__info__creator__name">Jules Wyvern</span>
-              </p>
+            <div class="time__left">
+              <img src="./images/icon-clock.svg" alt="clock" class="time__left__icon" /><span
+                class="nft__info__timeleft">3 days left</span>
             </div>
           </div>
         </div>
-      </article>
-    </main>
-  </body>
+
+        <div class="nft__info__creator">
+          <img src="./images/image-avatar.png" alt="avatar" class="nft__info__creator__avatar" />
+          <p>
+            Creation of
+            <span class="nft__info__creator__name">Jules Wyvern</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
